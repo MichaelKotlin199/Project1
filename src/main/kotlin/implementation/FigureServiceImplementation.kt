@@ -6,7 +6,7 @@ import org.example.figure.Square
 import org.example.interfaces.IFigureService
 
 object FigureServiceImplementation : IFigureService {
-    private var figures: MutableList<Figure> = mutableListOf()
+    private val figures: MutableList<Figure> = mutableListOf()
 
     override fun addSquare(property: Double) {
         figures.add(Square(property))
