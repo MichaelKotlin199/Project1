@@ -5,7 +5,7 @@ import org.example.exception.BadPropertyException
 import org.example.exception.WrongOperationTypeException
 import org.example.service.ConsoleService
 
-object ConsoleServiceImplementation : ConsoleService {
+object ConsoleServiceImpl : ConsoleService {
     private fun getOperation(operationNumber: Int): Operation {
         return when (operationNumber) {
             1 -> Operation.INSERT
@@ -28,8 +28,8 @@ object ConsoleServiceImplementation : ConsoleService {
             throw BadPropertyException("Property must be positive.")
         }
         when (number) {
-            0 -> FigureServiceImplementation.addCircle(property)
-            1 -> FigureServiceImplementation.addSquare(property)
+            0 -> FigureServiceImpl.addCircle(property)
+            1 -> FigureServiceImpl.addSquare(property)
         }
     }
 
@@ -40,8 +40,8 @@ object ConsoleServiceImplementation : ConsoleService {
                 val operation = getOperation(readln().toInt())
                 when (operation) {
                     Operation.INSERT -> addFigure()
-                    Operation.GET_AREA -> println(FigureServiceImplementation.getArea())
-                    Operation.GET_PERIMETER -> println(FigureServiceImplementation.getPerimeter())
+                    Operation.GET_AREA -> println(FigureServiceImpl.getArea())
+                    Operation.GET_PERIMETER -> println(FigureServiceImpl.getPerimeter())
                     Operation.EXIT -> break
                 }
             }

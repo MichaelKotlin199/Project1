@@ -1,7 +1,7 @@
 package org.example
 
-import org.example.service.implementation.ConsoleServiceImplementation
+import org.example.service.implementation.ConsoleServiceImpl
 
 fun main() {
-    ConsoleServiceImplementation.work()
+    ConsoleServiceImpl.work()
 }

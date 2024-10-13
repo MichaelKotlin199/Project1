@@ -5,7 +5,7 @@ import org.example.figure.Figure
 import org.example.figure.Square
 import org.example.service.FigureService
 
-object FigureServiceImplementation : FigureService {
+object FigureServiceImpl : FigureService {
     private val figures: MutableList<Figure> = mutableListOf()
 
     override fun addSquare(property: Double) {
