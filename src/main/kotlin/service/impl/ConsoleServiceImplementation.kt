@@ -1,11 +1,11 @@
-package org.example.implementation
+package org.example.service.implementation
 
 import org.example.Operation
 import org.example.exception.BadPropertyException
 import org.example.exception.WrongOperationTypeException
-import org.example.interfaces.IConsoleService
+import org.example.service.ConsoleService
 
-object ConsoleServiceImplementation : IConsoleService {
+object ConsoleServiceImplementation : ConsoleService {
     private fun getOperation(operationNumber: Int): Operation {
         return when (operationNumber) {
             1 -> Operation.INSERT

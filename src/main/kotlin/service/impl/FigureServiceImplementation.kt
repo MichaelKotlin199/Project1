@@ -1,11 +1,11 @@
-package org.example.implementation
+package org.example.service.implementation
 
 import org.example.figure.Circle
 import org.example.figure.Figure
 import org.example.figure.Square
-import org.example.interfaces.IFigureService
+import org.example.service.FigureService
 
-object FigureServiceImplementation : IFigureService {
+object FigureServiceImplementation : FigureService {
     private val figures: MutableList<Figure> = mutableListOf()
 
     override fun addSquare(property: Double) {

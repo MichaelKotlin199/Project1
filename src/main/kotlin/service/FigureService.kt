@@ -1,6 +1,6 @@
-package org.example.interfaces
+package org.example.service
 
-interface IFigureService {
+interface FigureService {
     fun addSquare(property: Double)
     fun addCircle(property: Double)
     fun getPerimeter(): List<Double>
